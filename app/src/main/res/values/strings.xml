@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">KtCameraRecord</string>
+    <string name="txt_app_description">本应用提供多个通过camera实现视频录制功能</string>
+    <string name="txt_plan_one">第一种方案 camera2+surfaceView</string>
+    <string name="txt_plan_two">第二种方案 camera2+openGl</string>
+    <string name="txt_plan_three">第三种方案 camera2+ffmpeg</string>
+    <string name="txt_plan_four">第四种方案 camerax+mediaCodec</string>
+</resources>

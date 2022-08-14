@@ -80,7 +80,7 @@ class SurfaceRecordActivity : AppCompatActivity() ,SurfaceHolder.Callback,ImageR
         mPrevHandler = Handler(previewThread.looper)
         mRecordHandler= Handler(recordThread.looper)
 
-        mImageReader = ImageReader.newInstance(1080,1920,ImageFormat.JPEG,2)
+        mImageReader = ImageReader.newInstance(1080,1920,ImageFormat.YUV_420_888,2)
         mImageReader!!.setOnImageAvailableListener(this,mRecordHandler)
     }
 

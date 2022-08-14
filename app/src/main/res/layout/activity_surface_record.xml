@@ -11,4 +11,16 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 
+    <com.andryyu.kt.camerarecord.view.CircularProgressView
+        android:id="@+id/btn_record"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/btn_capture"
+        android:clickable="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:focusable="true" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

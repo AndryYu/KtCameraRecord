@@ -78,7 +78,7 @@ class SurfaceRecordActivity : AppCompatActivity() ,SurfaceHolder.Callback,ImageR
         val recordThread = HandlerThread("Camera2Record")
         recordThread.start()
         mPrevHandler = Handler(previewThread.looper)
-        mRecordHandler= Handler(Looper.getMainLooper())
+        mRecordHandler= Handler(recordThread.looper)
 
         mImageReader = ImageReader.newInstance(1080,1920,ImageFormat.JPEG,2)
         mImageReader!!.setOnImageAvailableListener(this,mRecordHandler)
